@@ -1,0 +1,15 @@
+Query: HasTravelled(x,Congo)
+Query: HasVisa(x,Congo)&IsMember(x,EbolaTeam)=>HasTravelled(x,Congo)
+Query: HasVisa(x,Congo)
+Query: Works(x,AidAgency)=>HasVisa(x,Congo)
+Query: Works(x,AidAgency)
+Works(x,AidAgency): True: ['Alice', 'John']
+HasVisa(x,Congo): True: ['Alice', 'John']
+Query: IsMember(x,EbolaTeam)
+Query: IsDoctor(x,Ebola)&Works(x,AidAgency)=>IsMember(x,EbolaTeam)
+Query: IsDoctor(x,Ebola)
+IsDoctor(x,Ebola): True: ['John', 'Mary']
+Query: Works(x,AidAgency)
+Works(x,AidAgency): True: ['Alice', 'John']
+IsMember(x,EbolaTeam): True: ['John', 'Williams']
+HasTravelled(x,Congo): True: ['John', 'Williams']

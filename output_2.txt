@@ -1,0 +1,5 @@
+Query: HasSymptom(x,Fever)
+Query: Diagnosis(x,Fever)=>HasSymptom(x,Fever)
+Query: Diagnosis(x,Fever)
+Diagnosis(x,Fever): True: ['Alice']
+HasSymptom(x,Fever): True: ['Alice', 'Mary']

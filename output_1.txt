@@ -1,0 +1,2 @@
+Query: IsDoctor(x,Ebola)
+IsDoctor(x,Ebola): True: ['John', 'Mary']

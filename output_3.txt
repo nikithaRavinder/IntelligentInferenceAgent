@@ -1,0 +1,5 @@
+Query: HasVisa(Williams,Congo)
+Query: Works(x,AidAgency)=>HasVisa(x,Congo)
+Query: Works(x,AidAgency)
+Works(x,AidAgency): False
+HasVisa(Williams,Congo): False
